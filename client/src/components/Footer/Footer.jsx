@@ -36,43 +36,51 @@ const quick_links2 = [
 
 const Footer = () => {
   const year = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <Container>
         <Row>
           <Col lg="3">
             <div className="logo">
-              <img src={logo} alt="" />
+              <img src={logo} alt="logo" />
             </div>
+
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
               natus!
             </p>
+
             <div className="social__links d-flex align-items-center gap-4">
               <span>
                 <Link to="https://adarsh.vercel.app/">
-                  <i class="ri-user-settings-line"></i>
+                  <i className="ri-user-settings-line"></i>
                 </Link>
               </span>
+
               <span>
                 <Link to="https://github.com/adarsh">
-                  <i class="ri-github-fill"></i>
+                  <i className="ri-github-fill"></i>
                 </Link>
               </span>
+
               <span>
                 <Link to="https://www.linkedin.com/in/adarsh/">
-                  <i class="ri-linkedin-fill"></i>
+                  <i className="ri-linkedin-fill"></i>
                 </Link>
               </span>
+
               <span>
                 <Link to="https://www.instagram.com/adarsh_adarsh/">
-                  <i class="ri-instagram-line"></i>
+                  <i className="ri-instagram-line"></i>
                 </Link>
               </span>
             </div>
           </Col>
+
           <Col lg="3">
             <h5 className="footer__link-title">Discover</h5>
+
             <ListGroup className="footer__quick-links">
               {quick_links.map((item, index) => (
                 <ListGroupItem key={index} className="ps-0 border-0">
@@ -81,8 +89,10 @@ const Footer = () => {
               ))}
             </ListGroup>
           </Col>
+
           <Col lg="3">
             <h5 className="footer__link-title">Quick Links</h5>
+
             <ListGroup className="footer__quick-links">
               {quick_links2.map((item, index) => (
                 <ListGroupItem key={index} className="ps-0 border-0">
@@ -91,42 +101,47 @@ const Footer = () => {
               ))}
             </ListGroup>
           </Col>
+
           <Col lg="3">
-            <h5 className="footer__link-title"> Contact</h5>
+            <h5 className="footer__link-title">Contact</h5>
+
             <ListGroup className="footer__quick-links">
-              <ListGroupItem className="ps-0 border-0 d-flex aligin-items-center gap-3">
+              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
-                    <i class="ri-map-pin-line"></i>
+                    <i className="ri-map-pin-line"></i>
                   </span>
                   Address:
                 </h6>
-                <p className="mb-0">Shimogga, Karnataka</p>
+                <p className="mb-0">Puri, Odisha</p>
               </ListGroupItem>
-              <ListGroupItem className="ps-0 border-0 d-flex aligin-items-center gap-3">
+
+              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
-                    <i class="ri-mail-line"></i>
+                    <i className="ri-mail-line"></i>
                   </span>
                   Email:
                 </h6>
-                <p className="mb-0">adarsh.com</p>
+                <p className="mb-0">abc.com</p>
               </ListGroupItem>
-              <ListGroupItem className="ps-0 border-0 d-flex aligin-items-center gap-3">
+
+              <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                 <h6 className="mb-0 d-flex align-items-center gap-2">
                   <span>
-                    <i class="ri-phone-line"></i>
+                    <i className="ri-phone-line"></i>
                   </span>
                   Phone:
                 </h6>
-                <p className="mb-0">+91 9845098450</p>
+                <p className="mb-0">+91 9835627439</p>
               </ListGroupItem>
             </ListGroup>
           </Col>
+
           <Col lg="12" className="text-center pt-5">
             <p className="copyright">
-              Copyright {year}, Design and develop by Adarsh. All rights
-              reserved.{" "}
+              Copyright {year}, Design and develop by Sidharth. All rights
+              reserved.
             </p>
           </Col>
         </Row>
